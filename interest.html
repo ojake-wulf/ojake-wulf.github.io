@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <meta charset="UTF=8">
+    <meta name="viewport" content="width-device-width" initial-scale="1.0">
+    <link rel="stylesheet" href="style.css" type="text/css">
+</html>
+<header>
+    <div class="container">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="bio.html">Bio</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="interest.html">Interest</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <h1>Interest</h1>
+    </div>
+</header>
+<head>
+    <title>Interest</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <style type="text/css">
+        #flip {
+            padding: 5px;
+            text-align: center;
+            background-color: #262626;
+            border: solid 4px #66cc00;
+            color: #66cc00;
+        }
+        #panel1 {
+            padding: 25px;
+            display: none;
+            text-align: center;
+            border: solid 1px #66cc00;
+            color: #66cc00;
+        }
+        p {
+            color: #ffffff;
+        }
+    </style>
+    <script type="text/javascript">
+        $("document").ready(function(){
+            $("#flip").click(function(){
+                $("#panel1").slideToggle("slow");
+                });
+            });
+    </script>
+</head>
+<body>
+<div id="flip">Click Here to View My Interests</div>
+<div id="panel1">
+    <h2>Sports</h2>
+        <p>My siblings and I like to stay active by playing sports. I love
+            shooting hoops with my brothers, and playing other sports with 
+            friends. When it comes to watching NBA,
+            I am a huge San Antonio Spurs fan because of the humble 
+            organization orchestrated by the legendary Coach Pop.
+        </p>
+    <h2>Food</h2>
+        <p>I love trying different types of culture food. I can confidently
+            cook the best homemade Korean beef, and cajun shrimp. Over the years
+            I have crafted my cooking skills.
+            It is true when they say practice makes improvement. 
+            Before, my cooking used to be a hit-or-miss, but now, I don't have
+        to worry about locating the nearest restroom, just in case. 
+    <h2>Gym</h2>
+            <p>I still prefer playing sports over gym; however, it is essential for me to
+                work out for my mental and physical health. I am building a stronger fundamental 
+                skills and patience to make sure I have a proper form in order to prevent injury.
+                Recently, I have been incorporating boxing in my workout routine and it has been
+                challenging, but rewarding. I learned that incorporating other activites and learning
+                a new hobby at the same time really pushes me out of my comfort zone.
+            </p>
+</div>
+<img src="galaxy2.jpg"/>
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF=8">
+    <meta name="viewport" content="width=device-width", initial-scale="1.0">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <title>Main Page</title>
+</head>
+<header>
+    <div class="container">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="bio.html">Bio</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="interest.html">Interests</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <h1>Jake</h1>
+    </div>
+</header>
+<head>
+    <title>Bio</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <style type="text/css">
+        #flip1 {
+            padding: 5px;
+            text-align: center;
+            background-color: #262626;
+            border: solid 4px #66cc00;
+            color: #66cc00;
+        }
+        #panel2 {
+            padding: 25px;
+            display: none;
+            border: solid 1px #66cc00;
+            color: #66cc00;
+        }
+         p{
+             color: #ffffff;
+             text-align: center;
+         }
+         h2 {
+             text-align: left;
+         }
+
+         h3 {
+             text-align: left;
+         }
+    </style>
+    <script type="text/javascript">
+        $("document").ready(function(){
+            $("#flip1").click(function(){
+                $("#panel2").slideToggle("slow");
+        });
+    });
+    </script>
+</head>
+<body>
+<div id="flip1">Click Here For an Introduction</div>
+<div id="panel2">
+    <h2>Hey Everyone,</h2>
+    <p>My name is Jake and I am currently working towards a 
+        Master's degreee in Software Developing at Boston
+        University.
+        I would love to explore more about AI and implement AI to 
+        improve the healthcare system. If you want to connect, you can get in
+        contact with me through LinkedIn(which you can click <a href="https://www.linkedin.com/in/jake-oh-9445b5207">here</a>.)
+        I am also on GitHub so you can go check out my page <a href="https://github.com/ojake-wulf">here</a>.
+        If you would like to see what I have done so far, feel free to view my resume below.
+        <h3>Click to View Resume</h3>
+        <button onclick="document.location='resume.html'">Resume</button>
+    
+    </p>
+</div> 
+<img src="galaxy2.jpg"/>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <meta charset="UTF=8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" type="text/css">
+</html>
+<header>
+    <div class="container">
+        <h1>Bio</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="bio.html">Bio</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="interest.html">Interests</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+<head>
+    <title>Bio</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <style type="text/css">
+        #flip1 {
+            padding: 5px;
+            text-align: center;
+            background-color: #262626;
+            border: solid 4px #66cc00;
+            color: #66cc00;
+        }
+        #panel1 {
+            padding: 25px;
+            display: none;
+            text-align: center;
+            border: solid 1px #66cc00;
+            color: #66cc00;
+        }
+         p{
+             color: #ffffff;
+         }
+    </style>
+    <script type="text/javascript">
+        $("document").ready(function(){
+            $("#flip1").click(function(){
+                $("#panel1").slideToggle("slow");
+        });
+    });
+    </script>
+</head>
+<body>
+<div id="flip1">Click Here to Learn More About Me</div>
+<div id="panel1">
+    <h2>Birthplace</h2>
+        <p>I was born in Honolulu, Hawaii. </p>
+    <h2>West Coast</h2>
+        <p>Growing up, I was raised in Southern California.</p>
+    <h2>East Coast</h2>
+        <p>Recently, I drove across the states and currently reside in New York. </p>
+    <h2>Education</h2>
+        <p>I have obtained my Bachelor of Arts in English and Bachelor of Arts in Cinema-TV-Arts.</p>
+    <h2>Current Job</h2>
+        <p>I am currently working at Tesla as a data annotation specialist in the AI department.</p>
+</div>
+<img src="galaxy2.jpg"/>
+</body>
+</html>

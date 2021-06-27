@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF=8">
+        <meta name="viewport" content="width=device-width", initial-scale="1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="style.css" type="text/css">
+        <link rel="stylesheet" href="contactStyle.css" type="text/css">
+        <title>Main Page</title>
+    </head>
+    <header>
+        <div class="container">
+            <h1>Contact</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="bio.html">Bio</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="interest.html">Interests</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <title>Bio</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <style type="text/css">
+        #flip1 {
+            padding: 5px;
+            text-align: center;
+            background-color: #262626;
+            border: solid 4px #66cc00;
+            color: #66cc00;
+        }
+        #panel2 {
+            padding: 25px;
+            display: none;
+            border: solid 1px #66cc00;
+            color: #66cc00;
+        }
+         p{
+             color: #ffffff;
+             text-align: center;
+         }
+         h2 {
+             text-align: center;
+         }
+
+         h3 {
+             text-align: center;
+         }
+        
+    </style>
+    <script type="text/javascript">
+        $("document").ready(function(){
+            $("#flip1").click(function(){
+                $("#panel2").slideToggle("slow");
+        });
+    });
+    </script>
+</head>
+<body>
+<div id="flip1">Click Here To Get a Contact Form</div>
+<div id="panel2">
+        <button onclick="document.location='contact1.html'">Contact Form</button>
+    </p>
+</div> 
+<img src="galaxy2.jpg"/>
+    </html>
